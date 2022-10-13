@@ -307,7 +307,7 @@ function manualControl(character){
 
 /* Movements of character */
 function jumping(character){
-	if( (noseY<200)&&character.live) || (touchIsDown&&character.live) ){
+	if( (noseY<200&&character.live) || (touchIsDown&&character.live)){
 		character.velocity.y+=gameConfig.jump;
 	}
 }
